@@ -32,15 +32,5 @@
     }
 }
 
-- (void)setFormat:(NSString *)string, ...
-{
-    va_list args;
-    va_start(args, string);
-    NSString *str = [[NSString alloc] initWithFormat:string arguments:args];
-    va_end(args);
-    
-    NSLog(@"%@", str);
-}
-
 
 @end

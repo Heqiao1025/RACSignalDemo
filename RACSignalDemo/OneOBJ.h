@@ -11,14 +11,11 @@
 
 typedef void (^twoOBJBlock) (TwoObJ *obj);
 
-typedef void (^oneOBJBlock) (twoOBJBlock block);
-
 @interface OneOBJ : NSObject
 
 + (instancetype)creatOneOBJWithTwoBlockOBJ:(twoOBJBlock)twoblock;
 
 - (void)subScriberNext:(void(^)(id x))nextBlock;
 
-- (void)setFormat:(NSString *)string, ...;
 
 @end
